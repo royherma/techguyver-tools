@@ -1,0 +1,25 @@
+{
+  "name": "techguyver-tools",
+  "description": "TechGuyver music tools that run on your own Mac",
+  "owner": {
+    "name": "Techguyver Labs",
+    "url": "https://tools.techguyverlabs.org"
+  },
+  "plugins": [
+    {
+      "name": "song-exploder",
+      "source": "./plugins/song-exploder",
+      "description": "Drop a song. Get every stem, the drum parts, tempo, key, chords and a MIDI file."
+    },
+    {
+      "name": "song-dna",
+      "source": "./plugins/song-dna",
+      "description": "Drop a MIDI. Get its DNA and new variations that sound like the same song."
+    },
+    {
+      "name": "videomusicmaker",
+      "source": "./plugins/videomusicmaker",
+      "description": "Drop a talking video. Get background music written to fit what you say."
+    }
+  ]
+}

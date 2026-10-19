@@ -1,0 +1,10 @@
+{
+  "name": "song-exploder",
+  "description": "Drop a song. Get every stem, the drum parts, tempo, key, chords and a MIDI file.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Techguyver Labs",
+    "url": "https://tools.techguyverlabs.org"
+  },
+  "homepage": "https://tools.techguyverlabs.org/t/song-exploder"
+}

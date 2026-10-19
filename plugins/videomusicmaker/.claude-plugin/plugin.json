@@ -1,0 +1,10 @@
+{
+  "name": "videomusicmaker",
+  "description": "Drop a talking video. Get background music written to fit what you say.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Techguyver Labs",
+    "url": "https://tools.techguyverlabs.org"
+  },
+  "homepage": "https://tools.techguyverlabs.org/t/videomusicmaker"
+}
