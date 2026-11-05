@@ -9,12 +9,12 @@ Drop a MIDI. Get its DNA and new variations that sound like the same song. Runs 
 
 Needs: Mac with Apple silicon, 6 GB free disk (it shares Song Exploder's setup). Takes a MIDI file.
 
-## 1. Install once
+## 1. Install or update
 
 ```sh
 mkdir -p ~/.techguyver-tools && cd ~/.techguyver-tools
-[ -d song-reverse ] || git clone --depth 1 https://github.com/royherma/song-exploder.git song-reverse
-[ -d midi-dna ] || git clone --depth 1 https://github.com/royherma/song-dna.git midi-dna
+if [ -d song-reverse ]; then git -C song-reverse pull --ff-only -q || echo "Could not update song-reverse; using the copy already here"; else git clone --depth 1 https://github.com/royherma/song-exploder.git song-reverse; fi
+if [ -d midi-dna ]; then git -C midi-dna pull --ff-only -q || echo "Could not update midi-dna; using the copy already here"; else git clone --depth 1 https://github.com/royherma/song-dna.git midi-dna; fi
 song-reverse/scripts/install.sh
 curl -sL -o GeneralUser-GS.sf2 https://raw.githubusercontent.com/mrbumpy409/GeneralUser-GS/97049183643d5fc5a9322a69c5b09efb667c6c3a/GeneralUser-GS.sf2
 ```

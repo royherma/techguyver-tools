@@ -9,11 +9,11 @@ Drop a talking video. Get background music written to fit what you say. Runs ful
 
 Needs: Mac, 3 GB free disk. Takes a video of you talking (MP4, MOV).
 
-## 1. Install once
+## 1. Install or update
 
 ```sh
 mkdir -p ~/.techguyver-tools && cd ~/.techguyver-tools
-[ -d soundtrack ] || git clone --depth 1 https://github.com/royherma/videomusicmaker.git soundtrack
+if [ -d soundtrack ]; then git -C soundtrack pull --ff-only -q || echo "Could not update soundtrack; using the copy already here"; else git clone --depth 1 https://github.com/royherma/videomusicmaker.git soundtrack; fi
 soundtrack/scripts/install.sh
 ```
 

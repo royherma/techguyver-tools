@@ -9,11 +9,11 @@ Drop a song. Get every stem, the drum parts, tempo, key, chords and a MIDI file.
 
 Needs: Mac with Apple silicon, 6 GB free disk. Takes a song (MP3, WAV, M4A, FLAC).
 
-## 1. Install once
+## 1. Install or update
 
 ```sh
 mkdir -p ~/.techguyver-tools && cd ~/.techguyver-tools
-[ -d song-reverse ] || git clone --depth 1 https://github.com/royherma/song-exploder.git song-reverse
+if [ -d song-reverse ]; then git -C song-reverse pull --ff-only -q || echo "Could not update song-reverse; using the copy already here"; else git clone --depth 1 https://github.com/royherma/song-exploder.git song-reverse; fi
 song-reverse/scripts/install.sh
 ```
 

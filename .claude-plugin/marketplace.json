@@ -20,6 +20,11 @@
       "name": "videomusicmaker",
       "source": "./plugins/videomusicmaker",
       "description": "Drop a talking video. Get background music written to fit what you say."
+    },
+    {
+      "name": "yapcut",
+      "source": "./plugins/yapcut",
+      "description": "Drop a talking-head take. Get an edited vertical Reel: cuts, hook title, zooms, captions, sounds and effects."
     }
   ]
 }
